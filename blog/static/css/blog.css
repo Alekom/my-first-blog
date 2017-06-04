@@ -10,14 +10,6 @@
     text-decoration: none;
 }
 
-.content {
-    /*margin-left: 40px;*/
-}
-/*
-.content-container {
-    padding-left: 20px;
-}*/
-
 h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
@@ -45,6 +37,7 @@ h1, h2, h3, h4 {
 
 .post {
     margin-bottom: 70px;
+	width = 100%;
 }
 
 .post h1 a, .post h1 a:visited {

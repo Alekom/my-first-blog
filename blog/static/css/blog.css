@@ -1,5 +1,5 @@
 .page-header {
-    background-color: #bb0400;
+    background-color: 4296B3/*#bb0400*/;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -8,6 +8,10 @@
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+}
+
+.page-header a {
+	color: #78D2F0;
 }
 
 .post-buttons {

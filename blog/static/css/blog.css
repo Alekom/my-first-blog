@@ -10,6 +10,12 @@
     text-decoration: none;
 }
 
+.post-button {
+	float: right;
+	margin-left: 10px;
+	
+}
+
 h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
@@ -17,6 +23,7 @@ h1, h2, h3, h4 {
 .date {
     color: #828282;
 	float: right;
+	margin-left: 10px;
 }
 
 .save {

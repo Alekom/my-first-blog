@@ -2,7 +2,6 @@
 
 {% block content %}
     <div class="post">
-		<!--<div class="post-buttons">-->
 			<div class="date">
 			{% if post.published_date %}
 					{{ post.published_date }}
@@ -17,6 +16,11 @@
 			{% endif %}
 			</div>
 		<h1>{{ post.title }}</h1>
+		{% if post.picture %}
+			<img src="{{ post.picture.url }}" alt="{{ post.title }}" width="100%">
+			<br>
+			<br>
+		{% endif %}
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 	<hr>

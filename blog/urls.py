@@ -1,4 +1,6 @@
 from django.conf.urls import url
+from django.conf import settings
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns, static
 from . import views
 
 urlpatterns = [
@@ -13,3 +15,6 @@ urlpatterns = [
 	url(r'^comment/(?P<pk>\d+)/approve/$', views.comment_approve, name='comment_approve'),
 	url(r'^comment/(?P<pk>\d+)/remove/$', views.comment_remove, name='comment_remove'),
 ]
+
+urlpatterns += staticfiles_urlpatterns()
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

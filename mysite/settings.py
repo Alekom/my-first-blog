@@ -81,7 +81,7 @@ DATABASES = {
     }
 }
 
-MEDIA_ROOT = '/django/blog/media/'
+MEDIA_ROOT = BASE_DIR + '/blog/media/'
 
 MEDIA_URL = '/images/'
 
